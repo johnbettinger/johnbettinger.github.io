@@ -3,17 +3,173 @@
 <html>
 <head>
 
-<link rel="stylesheet" href="app.css"/>
+    <title>John Bettinger</title> 
+    <link rel="stylesheet" href="app.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+
 </head>
 
 
 <body>
 
 
-<h1>John Bettinger</h1>
 
-<button>click me</button>
+    <!-- <div id="background"> -->
+
+
+        <!-- <div class="container"> -->
+            <!-- <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Education</a></li>
+                   
+                    <li><a href="resume/Resume_John_Bettinger.pdf" target="_blank">Resume</a></li>
+                    <a href="https://www.linkedin.com/in/john-bettinger/" target="_blank">
+                        <img src="images/linkedinlogo.png" class="linkedin">
+                    </a>
+                    <a href="https://github.com/johnbettinger" target="_blank">
+                        <img src="images/githublogo.png" class="github">
+                    </a>
+
+
+                    
+                </ul>
+
+  
+            </nav> -->
+
+            <!-- <section class="banner">
+                <h1 class="name">John Bettinger</h1>
+
+
+            </section> -->
+
+
+
+        <!-- </div> -->
+        <!-- <section class="banner"></section> -->
+
+
+    <!-- </div> -->
+
+
+
+
+
+    
+        
+       
+
+    <!-- <div class="photo">
+
+        <img src="images/IMG_7610.JPG" class="headshot">
+
+    </div>     -->
+
+    <div class="slides">
+
+        <header>
+            <div class="container">
+                <ul>
+                    <li class="homepage"><a href="#homepage" class="active">Home</a></li>
+                    <li class="aboutpage"><a href="#aboutpage">About</a></li>
+                    <li class="projectspage"><a href="#projectspage">Projects</a></li>
+                    <li class="experiencepage"><a href="#experiencepage">Experience</a></li>
+                    <li><a href="#">Education</a></li>
+                
+                    <li><a href="resume/Resume_John_Bettinger.pdf" target="_blank">Resume</a></li>
+                    <a href="https://www.linkedin.com/in/john-bettinger/" target="_blank">
+                        <img src="images/linkedinlogo.png" class="linkedin">
+                    </a>
+                    <a href="https://github.com/johnbettinger" target="_blank">
+                        <img src="images/githublogo.png" class="github">
+                    </a>
+
+
+                    
+                </ul>
+            </div>
+
+            
+
+
+        </header>
+
+        <section id="homepage">
+
+            <!-- <div class="banner">
+                <h1 class="name">John Bettinger</h1>
+
+
+            </div> -->
+            
+            <h1 class="name">John Bettinger</h1>
+            
+
+
+        </section>
+
+        
+
+        <section id="aboutpage">
+
+            <img src="images/IMG_7610.JPG" alt="headshot">
+            <article class="about">
+
+                <h3>About Me</h3>
+                <p>
+                    I am currently a rising junior at Vanderbilt University majoring in Computer Science and Applied Mathematics 
+                    with a minor in <br>Physics. I came into college undecided within the School of Engineering, and over the course 
+                    of my first year I narrowed my <br>focus to Mechanical Engineering or Computer Science. Finally, at the end of my sophomore year, 
+                    I have decided to choose <br>Computer Science. 
+
+
+
+
+                </p>
+
+
+
+            </article>
+        </section>
+
+
+        <section id="projectspage">
+
+        </section>
+
+        <section id="experiencepage">
+            
+        </section>
+
+        
+
+
+    </div>
+
+
+    <script src="app.js">
+        window.addEventListener("scroll", function() {
+
+            var navigation = document.querySelector("header");
+
+            navigation.classList.toggle("sticky", window.scrollY > 0);
+
+
+        });
+    </script>
 
 
 </body>
+
+
+
+<!-- <script src="app.js"></script> -->
+
 </html>

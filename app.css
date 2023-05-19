@@ -1,7 +1,226 @@
-h1 {
-    color : red;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
+
+
+
 body {
-    background-color: blue;
+    background-color: black;
+    /* min-height: 200vh ; */
+}
+
+
+
+
+
+/* .container {
+    width: 43%;
+    margin: auto;
+    padding: 43px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+   
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 21%;
+}
+
+header ul li {
+    /* display: inline-block; */
+    list-style: none;
+    position: relative;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0px 20px;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+
+header ul li a::after {
+    content: '';
+    height: 0px;
+    width: 0%;
+    position: absolute;
+    background: white;
+    left: 0;
+    bottom: -5px;
+    transition: 0.6s;
+    
+}
+
+header ul li a:hover::after {
+    width: 100%;
+    height: 2px;
+}
+
+header ul li a.active::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background: white;
+    left: 0;
+    bottom: -5px;
+    transition: 0.6s;
+}
+
+/* nav ul li a.active {
+
+    background-color: white;
+    transition: 0.6 ease background-color;
+    color: black;
+} */
+
+header ul a img.linkedin{
+    list-style: none;
+    position: relative;
+    margin-left: 230px;
+    max-width: 25px;
+}
+
+header ul a img.github {
+    list-style: none;
+    position: relative; 
+    margin-left: 10px;
+    max-width: 25px;
+}
+
+header.sticky {
+    padding: 5px 100px;
+    background: #282828;
+}
+
+header.sticky ul li a {
+    color: #000;
+}
+
+/* .banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(images/unsplashbackground.jpg);
+    background-size: cover;
+    
+   
+} */
+
+.name {
+    color : white;
+    width: 100%;
+    height: 100vh;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 100;
+    font-family: Verdana, Arial, sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    top: 330px;
+    letter-spacing: 5px;
+
+}
+
+.about {
+    position: relative;
+    color: black;
+}
+
+h3 {
+    font-size: 20px;
+    height: 40px;
+   
+}
+
+/* #background {
+    width: 100%;
+    height: 1000vh;
+    background-image: url(images/websitebackground.png);
+    background-size: cover;
+    background-position: center;
+
+} */
+
+.slides {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    scroll-snap-align: start;
+    background-color: white;
+    
+
+}
+
+#homepage {
+    background-image: url(images/unsplashbackground.jpg);
+    background-size: cover;
+}
+
+#aboutpage {
+    background: linear-gradient(454deg, rgb(246, 224, 196), burlywood);
+
+}
+
+#aboutpage img {
+    
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 450px;
+    border-radius: 70px;
+    
+    position: relative;
+    
+
+}
+
+#experiencepage {
+    background: darkcyan;
+
+}
+
+#projectspage {
+    background: lightcoral
 }
